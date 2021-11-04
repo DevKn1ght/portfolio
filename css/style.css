@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header .navbar {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  z-index: 0;
+  background-color: black !important;
+  background: url("/images/background.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 1920px 1080px;
+  background-position: 53% 0%;
+  overflow-x: hidden !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar-brand {
+    visibility: hidden;
+  }
+
+  .navToggler {
+    border: none !important;
+    text-align: center;
+    color: white !important;
+  }
+  .navToggler i {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    top: 0;
+    transition: all ease 0.15s;
+  }
+
+  .navToggler:active {
+    color: #84dd6d !important;
+  }
+  .navToggler:active i {
+    top: 5px;
+  }
+
+  .navToggler:focus {
+    outline-style: none !important;
+    box-shadow: none !important;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  .navbar-nav .nav-item {
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: solid 2px white;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    transition: all 0.15s ease;
+  }
+  .navbar-nav .nav-item:active {
+    transform: scale(0.9);
+  }
+
+  main {
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .mobile_index {
+    text-align: center;
+  }
+  .mobile_index img {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 30%;
+  }
+  .mobile_index article {
+    margin-top: 20px;
+  }
+  .mobile_index article h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  .mobile_index article h1 span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #B6F0A7;
+  }
+  .mobile_index article p {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .mobile_index article p span {
+    color: #B6F0A7;
+    font-weight: 500;
+  }
+  .mobile_index article p:last-child {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+  }
+  .mobile_index .mobile_index_links {
+    padding: 12px;
+  }
+  .mobile_index .mobile_index_links button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: solid 1px white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transition: all 0.15s linear;
+  }
+  .mobile_index .mobile_index_links button:active {
+    transform: scale(0.95);
+  }
+
+  .mobile_footer {
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 10px black;
+    width: auto;
+    height: auto;
+    background: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mobile_footer #div1 {
+    flex: 1 1 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .mobile_footer #div1 i {
+    font-size: 40px;
+  }
+  .mobile_footer #div1 i span {
+    font-size: 25px;
+  }
+  .mobile_footer div:nth-child(2) {
+    width: 3px;
+    background: white;
+  }
+  .mobile_footer #div2 {
+    flex: 1 1 49%;
+    position: relative;
+    top: 10px;
+  }
+  .mobile_footer #div2 span:first-child {
+    font-size: 1.5rem;
+  }
+  .mobile_footer #div2 span:nth-child(3) {
+    color: dimgray;
+    font-size: 1rem;
+  }
+  .mobile_footer #div2 span:nth-child(5) {
+    color: #B6F0A7;
+    font-size: 0.9rem;
+  }
+  .mobile_footer button {
+    background-color: #1d1d1d;
+    color: rgba(182, 240, 167, 0.7);
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    flex: 1 1 33%;
+    transition: all 0.15s ease;
+  }
+  .mobile_footer button:active {
+    background-color: #303030;
+    color: #b6f0a7;
+    transform: scale(0.9);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
