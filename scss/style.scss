@@ -25,6 +25,8 @@ body {
     overflow-x: hidden !important;
 }
 
+hr {color: white !important; height: 2px !important;}
+
 
 @media only screen and (max-width: 576px) {
     .navbar-brand {
@@ -73,6 +75,7 @@ body {
         margin-right: 25px;
     }
     
+    // INDEX PAGE - MOBILE
     .mobile_index {
 
         text-align: center;
@@ -135,8 +138,10 @@ body {
         }
 
     }
+
+    // FOOTER MOBILE VERSION
     .mobile_footer {
-        margin-top: 20px;
+        margin-top: 40px;
         box-shadow: 0px 0px 10px 10px black;
         width: auto;
         height: auto;
@@ -154,7 +159,7 @@ body {
             i {font-size: 40px; span {font-size: 25px;}}
         }
         div:nth-child(2) {
-            width: 3px;
+            width: 1px;
             background: white;
         }
         #div2 {
@@ -187,6 +192,54 @@ body {
             background-color: rgb(48, 48, 48);
             color: rgba($color: #B6F0A7, $alpha: 1.0);
             transform: scale(0.9);
+        }
+    }
+
+    // ABOUT ME PAGE - MOBILE
+
+    .mobile_about {
+        text-align: center;
+        img {
+            margin-top: 30px;
+            width: 290px;
+            border: white solid 2px;
+            border-radius: 100%;
+        }
+        h1 {
+            margin-top: 20px;
+            color: white;
+            font-size: 2.5rem; font-weight: 600;
+        }
+        article {
+            color: white; background-color: rgba($color: #000000, $alpha: 0.45);
+            padding: 10px; border-radius: 5px;
+            font-size: 1.0rem;
+            text-align: center;
+            letter-spacing: 1p;
+        }
+        i {font-size: 70px; color: white;}
+    }
+
+    // CONTACT PAGE - MOBILE
+    
+    .mobile_contact {
+        text-align: center;
+        color: white;
+        h1 {font-size: 3rem; margin-top: 100px;}
+        article {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            border-radius: 8px;
+
+            div {
+                margin-top: 35px;
+                margin-bottom: 35px;
+
+                h3 {font-size: 1.8rem;}
+                p {margin-top: 10px; font-size: 1.2rem; font-weight: 300; font-style: italic;}
+            }
+            
         }
     }
 }
