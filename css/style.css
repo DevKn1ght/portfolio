@@ -27,7 +27,143 @@ hr {
   height: 2px !important;
 }
 
+@media only screen and (min-width: 1201px) {
+  .mobile_nav {
+    display: none !important;
+  }
+
+  .desktop_nav {
+    display: block !important;
+  }
+
+  header .desktop_nav .navToggler {
+    display: none;
+  }
+  header .desktop_nav .navbar-brand {
+    margin-left: 10px;
+    font-size: 1.35rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+  }
+  header .desktop_nav .nav-item {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 1.35rem;
+    font-weight: 300;
+  }
+  header .desktop_nav .nav-item a {
+    letter-spacing: 5px;
+  }
+  header .desktop_nav .nav-item #lang {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+
+  main .desktop_index {
+    display: block;
+  }
+  main .mobile_index {
+    display: none;
+  }
+  main .desktop_index {
+    margin-top: 100px;
+  }
+  main .desktop_index #logo div:first-child {
+    margin-bottom: 0px;
+  }
+  main .desktop_index #logo div:first-child img {
+    max-width: 370px;
+    max-height: 370px;
+    width: auto;
+    height: auto;
+  }
+  main .desktop_index #logo div:last-child h1 {
+    color: white !important;
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  main .desktop_index #logo div:last-child h1 span {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #B6F0A7;
+    letter-spacing: 7px;
+  }
+  main .desktop_index #links button {
+    height: 150px;
+    border: solid white 1px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .desktop_footer {
+    display: block !important;
+    background-color: black;
+    margin-top: 220px;
+  }
+  .desktop_footer section article:first-child i {
+    color: white;
+    font-size: 5rem;
+  }
+  .desktop_footer section article:first-child i span {
+    position: relative;
+    bottom: 13px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+  }
+  .desktop_footer section article:nth-child(2) button {
+    border: solid white 1px;
+    background-color: #131313;
+    color: #B6F0A7;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 30px;
+    font-size: 1.5rem;
+  }
+  .desktop_footer section article:last-child h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+  }
+  .desktop_footer section article:last-child h3 {
+    text-transform: uppercase;
+    color: #afafaf;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .desktop_footer section article:last-child h4 {
+    color: #B6F0A7;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  .mobile_footer {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1401px) {
+  main .desktop_index #logo div:first-child img {
+    width: 350px;
+    height: 350px;
+  }
+  main .desktop_index #logo div:last-child h1 {
+    font-size: 4rem;
+  }
+}
 @media only screen and (max-width: 576px) {
+  .desktop_nav {
+    display: none !important;
+  }
+
   .navbar-brand {
     visibility: hidden;
   }
@@ -80,6 +216,12 @@ hr {
     margin-top: 70px;
     margin-left: 25px;
     margin-right: 25px;
+  }
+  main .desktop_index {
+    display: none;
+  }
+  main .mobile_index {
+    display: block;
   }
 
   .mobile_index {

@@ -12,8 +12,34 @@
     <title></title>
 </head>
 <body>
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <header>
+      <nav class="desktop_nav navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ANTONY LACERTE</a>
+          <div id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apropos.html">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="lang" href="#">ENGLISH</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <nav class="fixed-top mobile_nav navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Antony Lacerte</a>
               <button class="btn navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,20 +69,60 @@
     </header>
 
     <main>
-        <section class="mobile_index">
-            <img src="images/main_logo.png" alt="" style="width: 270px; height: 270px; ">
-            <article>
-                <h1><em>Bonjour!</em><br><span>Je m'appelle Antony</span></h1>
-                <p><em>Tout comme les arbres en automne, le paysage devient une peinture. Il en est de même pour le Front-end, devenant</em> <span>ma toile.</span></p>
-                <p><span>La simplicité</span> est-ce que je préfère lorsqu'il s'agit du visuel.</p>
-            </article>
-            <div class="mobile_index_links row">
-              <a href="portfolio.html"><button class="col-12">Portfolio</button></a>
-              <a href="apropos.html"><button class="col-12">À propos</button></a>
-              <a href="contact.html"><button class="col-12">Contact</button></a>
+      <section class="desktop_index container">
+        <div class="row">
+          <article id="logo" class="row col d-flex flex-wrap justify-content-center align-items-center" style="height: 700px;">
+            <div class="col-12 d-flex justify-content-center">
+              <img src="images/main_logo.png" alt="logo">
             </div>
-        </section>
+            <div class="col-12 d-flex justify-content-center align-items-center text-center">
+              <h1>HELLO THERE!<br><span>My name is Antony</span></h1>
+            </div>
+          </article>
+          <article id="links" class="p-5 row d-flex flex-column justify-content-between col" style="height: 700px;">
+            <a><button class="col-12">portfolio</button></a>
+            <a><button class="col-12">à propos</button></a>
+            <a><button class="col-12">contact</button></a>
+          </article>
+        </div>
+        
+
+          
+      </section>
+
+      <section class="mobile_index">
+        <img src="images/main_logo.png" alt="" style="width: 270px; height: 270px; ">
+        <article>
+            <h1><em>Bonjour!</em><br><span>Je m'appelle Antony</span></h1>
+            <p><em>Tout comme les arbres en automne, le paysage devient une peinture. Il en est de même pour le Front-end, devenant</em> <span>ma toile.</span></p>
+            <p><span>La simplicité</span> est-ce que je préfère lorsqu'il s'agit du visuel.</p>
+        </article>
+        <div class="mobile_index_links row">
+          <a href="portfolio.html"><button class="col-12">Portfolio</button></a>
+          <a href="apropos.html"><button class="col-12">À propos</button></a>
+          <a href="contact.html"><button class="col-12">Contact</button></a>
+        </div>
+    </section>
     </main>
+
+    <footer class="desktop_footer container p-3">
+      <section class="row d-flex justify-content-center">
+        <article class="col d-flex justify-content-center flex-column align-items-start">
+          <i class="fab fa-linkedin"> <span>LinkedIn</span></i>
+          <br>
+          <i class="fab fa-facebook-square"> <span>Facebook</span></i>
+        </article>
+        <article class="col d-flex justify-content-center align-items-center">
+          <button>télécharger mon C.V.</button>
+        </article>
+        <article class="col d-flex flex-column justify-content-center align-items-end">
+          <h2>antony lacerte</h2>
+          <h3>all rights reserved | 2021</h3>
+          <h4>antonylacerte@hotmail.com</h4>
+        </article>
+      </section>
+      
+    </footer>
 
     <footer class="mobile_footer p-3">
       <div class="my-5" id="div1">
@@ -73,7 +139,6 @@
         <span>antonylacerte@hotmail.com</span>
       </div>
       <button>Télécharger mon C.V.</button>
-
     </footer>
     <!-- SCRIPTS -->
     <!-- BOOTSTRAP 5.0 -->
