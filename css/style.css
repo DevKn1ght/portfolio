@@ -50,6 +50,7 @@ hr {
     margin-right: 8px;
     font-size: 1.35rem;
     font-weight: 300;
+    transition: all 0.15s ease;
   }
   header .desktop_nav .nav-item a {
     letter-spacing: 5px;
@@ -58,11 +59,35 @@ hr {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
   }
+  header .desktop_nav .nav-item:hover {
+    transform: translateY(5px);
+  }
 
+  main {
+    min-height: 80vh;
+  }
   main .desktop_index {
     display: block;
   }
   main .mobile_index {
+    display: none;
+  }
+  main .desktop_about {
+    display: block;
+  }
+  main .mobile_about {
+    display: none;
+  }
+  main .desktop_portfolio {
+    display: block;
+  }
+  main .mobile_portfolio {
+    display: none;
+  }
+  main .desktop_contact {
+    display: block;
+  }
+  main .mobile_contact {
     display: none;
   }
   main .desktop_index {
@@ -89,7 +114,10 @@ hr {
     color: #B6F0A7;
     letter-spacing: 7px;
   }
-  main .desktop_index #links button {
+  main .desktop_index #links a {
+    transition: all 0.15s ease;
+  }
+  main .desktop_index #links a button {
     height: 150px;
     border: solid white 1px;
     background-color: rgba(0, 0, 0, 0.55);
@@ -99,21 +127,152 @@ hr {
     text-transform: uppercase;
     letter-spacing: 5px;
   }
+  main .desktop_index #links a:hover {
+    transform: scale(1.05);
+  }
+  main .desktop_index #links a:active {
+    transform: scale(0.85);
+  }
+  main .desktop_about {
+    margin-top: 100px;
+  }
+  main .desktop_about div article:first-child img {
+    border-radius: 100%;
+    border: solid white 3px;
+    width: auto;
+    height: auto;
+  }
+  main .desktop_about div article:last-child {
+    height: 570px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .desktop_about div article:last-child h2 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+  }
+  main .desktop_about div article:last-child i {
+    color: white;
+    font-size: 5rem;
+  }
+  main .desktop_about div article:last-child p {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+  }
+  main .desktop_about div article:last-child::-webkit-scrollbar {
+    width: 20px !important;
+  }
+  main .desktop_about div article:last-child::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 30px;
+  }
+  main .desktop_portfolio {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .desktop_portfolio article {
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.55);
+    height: auto;
+    width: 800px;
+    color: white;
+  }
+  main .desktop_portfolio article h1 {
+    font-weight: 400;
+    letter-spacing: 4px;
+  }
+  main .desktop_portfolio article p {
+    font-weight: 300;
+  }
+  main .desktop_portfolio article i span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: yellow;
+  }
+  main .desktop_portfolio article a {
+    text-decoration: none;
+    color: #B6F0A7;
+  }
+  main .desktop_portfolio article a:hover {
+    color: #7faa75;
+  }
+  main .desktop_portfolio article div {
+    height: 250px;
+    width: auto;
+    border-radius: 5px;
+  }
+  main .desktop_portfolio article #effixOne {
+    background-image: url("/images/effixOne.jpg");
+    background-position: 50% 45%;
+  }
+  main .desktop_portfolio article #effixTwo {
+    background-image: url("/images/project_02.jpg");
+    background-position: 70% 45%;
+  }
+  main .desktop_portfolio article #laravel {
+    background-image: url("/images/laravel.png");
+    background-position: 50% 50%;
+  }
+  main .desktop_portfolio article #reactfinal {
+    background-image: url("/images/blueprint.jpg");
+    background-position: 50% 50%;
+  }
+  main .desktop_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+  }
+  main .desktop_contact h1 {
+    font-size: 5rem;
+    color: white;
+  }
+  main .desktop_contact article {
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile_footer {
+    display: none;
+  }
 
   .desktop_footer {
-    display: block !important;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 20px black;
     background-color: black;
-    margin-top: 220px;
   }
   .desktop_footer section article:first-child i {
     color: white;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .desktop_footer section article:first-child i span {
     position: relative;
     bottom: 13px;
     color: white;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 200;
     letter-spacing: 5px;
   }
@@ -123,31 +282,35 @@ hr {
     color: #B6F0A7;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 30px;
-    font-size: 1.5rem;
+    padding: 20px;
+    font-size: 1.2rem;
+    transition: all 0.15s ease;
+  }
+  .desktop_footer section article:nth-child(2) button:hover {
+    transform: scale(1.05);
+  }
+  .desktop_footer section article:nth-child(2) button:active {
+    transform: scale(0.85);
   }
   .desktop_footer section article:last-child h2 {
     text-transform: uppercase;
     color: white;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 300;
     letter-spacing: 5px;
   }
   .desktop_footer section article:last-child h3 {
     text-transform: uppercase;
     color: #afafaf;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 1px;
   }
   .desktop_footer section article:last-child h4 {
     color: #B6F0A7;
     font-weight: 300;
+    font-size: 1rem;
     letter-spacing: 2px;
-  }
-
-  .mobile_footer {
-    display: none !important;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1401px) {
@@ -161,6 +324,42 @@ hr {
 }
 @media only screen and (max-width: 576px) {
   .desktop_nav {
+    display: none !important;
+  }
+
+  .desktop_index {
+    display: none;
+  }
+
+  .mobile_index {
+    display: block;
+  }
+
+  .desktop_about {
+    display: none;
+  }
+
+  .mobile_about {
+    display: block;
+  }
+
+  .desktop_portfolio {
+    display: none;
+  }
+
+  .mobile_portfolio {
+    display: block;
+  }
+
+  .desktop_contact {
+    display: none;
+  }
+
+  .mobile_contact {
+    display: block;
+  }
+
+  .desktop_footer {
     display: none !important;
   }
 
@@ -282,6 +481,7 @@ hr {
   }
 
   .mobile_footer {
+    display: block;
     margin-top: 40px;
     box-shadow: 0px 0px 10px 10px black;
     width: auto;
@@ -395,6 +595,59 @@ hr {
     font-size: 1.2rem;
     font-weight: 300;
     font-style: italic;
+  }
+
+  .mobile_portfolio {
+    margin-top: 100px;
+  }
+  .mobile_portfolio article {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-top: 50px;
+    color: white;
+  }
+  .mobile_portfolio article h1 {
+    font-weight: 400;
+    letter-spacing: 4px;
+  }
+  .mobile_portfolio article p {
+    font-weight: 300;
+    text-align: justify;
+  }
+  .mobile_portfolio article i span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: yellow;
+  }
+  .mobile_portfolio article a {
+    text-decoration: none;
+    color: #B6F0A7;
+    letter-spacing: 3px;
+  }
+  .mobile_portfolio article a:hover {
+    color: #7faa75;
+  }
+  .mobile_portfolio article div {
+    height: 250px;
+    width: auto;
+    border-radius: 5px;
+  }
+  .mobile_portfolio article #effixOne {
+    background-image: url("/images/effixOne.jpg");
+    background-position: 50% 45%;
+  }
+  .mobile_portfolio article #effixTwo {
+    background-image: url("/images/project_02.jpg");
+    background-position: 70% 45%;
+  }
+  .mobile_portfolio article #laravel {
+    background-image: url("/images/laravel.png");
+    background-position: 72% 50%;
+  }
+  .mobile_portfolio article #reactfinal {
+    background-image: url("/images/blueprint.jpg");
+    background-position: 50% 50%;
   }
 }
 
