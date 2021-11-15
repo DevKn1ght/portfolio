@@ -498,10 +498,11 @@ hr {
     flex-direction: column;
     align-items: stretch;
   }
-  .mobile_footer #div1 i {
+  .mobile_footer #div1 a i {
+    color: white !important;
     font-size: 40px;
   }
-  .mobile_footer #div1 i span {
+  .mobile_footer #div1 a i span {
     font-size: 25px;
   }
   .mobile_footer div:nth-child(2) {
@@ -524,17 +525,20 @@ hr {
     color: #B6F0A7;
     font-size: 0.9rem;
   }
-  .mobile_footer button {
+  .mobile_footer .resumeFile {
+    text-align: center;
+    text-decoration: none;
+    justify-self: center;
+    flex: 1 1 100%;
     background-color: #1d1d1d;
     color: rgba(182, 240, 167, 0.7);
     font-weight: 600;
     border: none;
     padding: 10px;
     margin-top: 20px;
-    flex: 1 1 33%;
     transition: all 0.15s ease;
   }
-  .mobile_footer button:active {
+  .mobile_footer .resumeFile:active {
     background-color: #303030;
     color: #b6f0a7;
     transform: scale(0.9);
